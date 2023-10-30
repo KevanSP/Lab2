@@ -16,12 +16,14 @@ def calc_average(data):
     total = sum(data)
     avg = total / len(data)
     print("The avg is: " + str(avg))
+    return avg
 
 
 def find_min_max(data):
     dmax = max(data)
     dmin = min(data)
     print("Min is: " + str(dmin) + "Max is: " + str(dmax))
+    return [dmin,dmax]
 
 
 def sort_temperature(data):
@@ -35,6 +37,4 @@ def calc_median_temperature(data):
 
     median = data[numdata]
     print("The Median is: "+str(median))
-
-
-display_main_menu()
+    return median
